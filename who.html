@@ -20,53 +20,143 @@
   <link href="stylesheet.css" rel="stylesheet"> 
 </head>
 <body>
-<style>
+  <style>
 body{
   font-family: 'Open Sans',sans-serif;
 }
 .content{
   font-family: 'PT Sans', sans-serif;
 }
+.header .logo{
+  font-size: 16px;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .header{
+    display:none;
+  }
+}
 </style>
 <div class="header">
   <a href="#default" class="logo"><img src="files/envelope-solid.svg"> info@patronaccounting.com</a>
   <a href="#default" class="logo"><img src="files/phone-alt-solid.svg"> +91- 99200-75893</a>
   <ul class="header-right">
-    <li><a href=""><img src="files/facebook-f-brands.svg"></a></li>
-    <li><a href=""><img src="files/twitter-brands.svg" style="height:25px;"></a></li>
-    <li><a href=""><img src="files/linkedin-in-brands.svg"style="height:25px;"></a></li>
+    <li><a href="login.html" class="logo">Login</a></li>
+    <li><a href="signup.html" class="logo">Sign Up</a></li>
   </ul>
 </div>
-<nav class="navbar navbar-default">
+
+<nav class="navbar navbar-default topnav mobile" id="myTopnav">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="files/accountlogo.png"></a>
+      
+      <a class="navbar-brand" href="index.html"><img src="files/accountlogo.png"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right listElements">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Business Registration</a></li>
-      <li><a href="#">Compliances</a></li>
-      <li><a href="#">Tax Consultancy</a></li>
-      <li><a href="#">TradeMarks</a></li>
-      <li><a href="#">PF/ESI</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html">Business Registration</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="compliance.html">Compliances
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="accountant.html">Accounting</a></li>
+          <li><a href="audit.html">Auditing</a></li>
+          <li><a href="roc.html">ROC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="tax.html">Tax Consultancy
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="gst.html">GST</a></li>
+          <li><a href="tds.html">TDS</a></li>
+          <li><a href="taxIncome.html">Income Tax</a></li>
+          <li><a href="taxPlan.html">Tax Planning</a></li>
+        </ul>
+      </li>
+      <li><a href="trademark.html">TradeMarks</a></li>
+      <li><a href="pf.html">PF/ESI</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">SignUp</a></li>
     </ul>
   </div>
+  </div>
 </nav>
+
+<nav class="navbar navbar-default topnav desktop" id="myTopnav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="index.html"><img src="files/accountlogo.png"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right listElements">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html">Business Registration</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="compliance.html">Compliances
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="accountant.html">Accounting</a></li>
+          <li><a href="audit.html">Auditing</a></li>
+          <li><a href="roc.html">ROC</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="tax.html">Tax Consultancy
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="gst.html">GST</a></li>
+          <li><a href="tds.html">TDS</a></li>
+          <li><a href="taxIncome.html">Income Tax</a></li>
+          <li><a href="taxPlan.html">Tax Planning</a></li>
+        </ul>
+      </li>
+      <li><a href="trademark.html">TradeMarks</a></li>
+      <li><a href="pf.html">PF/ESI</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="imageWhatsapp">
+  <img src="files/whatsapp.png" style="width:50px;height:50px;">
+</div>
 <div class="container carouselInteractive">
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-sm-6">
         <h3>Who We Are</h3>
         <hr>
         <p>Our Army Compromise of :</p>
         <ul>
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
               <li>Chartered Accountants</li>
               <li>Companies Secretaries</li>
               <li>Trademark Expertise</li>
             </div>
-            <div class="col-xs-6">
+            <div class="col-sm-6">
               <li>IIM Graduate</li>
               <li>Fellow Actuary</li>
               <li>Accountants</li>
@@ -74,7 +164,7 @@ body{
           </div>
         </ul> 
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6">
       <section class="carousel-fixed-height">
         <div id="carousel-fixed-height" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
@@ -193,38 +283,38 @@ body{
 <div class="container-fluid text-md-left">
 <div class="row">
 <div class="col-md-3 mt-md-0 mt-3 text-center footerContent">
-<h3 class="text-uppercase">About Us</h5>
+<h3 class="text-uppercase">About Us</h3>
 <p class="text-justify">Patron accounting is into providing Accounting and compliance services. Our years of experience in different industries gives us flexible approach and strong domain knowledge which helps us in meeting specific client requirements.</p>
 </div>
 <div class="col-md-3 mt-md-0 mt-3 text-left footerContent">
-<h3 class="text-uppercase">Our Services</h5>
+<h3 class="text-uppercase">Our Services</h3>
 <ul class="list-unstyled">
-<li><a href="#!">Business Administration</a></li>
+<li><a href="business.html">Business Administration</a></li>
 <hr>
-<li><a href="#!">Compliances</a></li>
+<li><a href="comp.html">Compliances</a></li>
 <hr>
-<li><a href="#!">Tax Consultancy</a></li>
+<li><a href="tax.html">Tax Consultancy</a></li>
 <hr>
-<li><a href="#!">PF/ESI</a></li>
+<li><a href="pf.html">PF/ESI</a></li>
 <hr>
 </ul>
 </div>
 <div class="col-md-3 mt-md-0 mt-3 text-left footerContent">
-<h3 class="text-uppercase">Quick Links</h5>
+<h3 class="text-uppercase">Quick Links</h3>
 <ul class="list-unstyled">
-<li><a href="#!">Who we are</a></li>
+<li><a href="who.html">Who we are</a></li>
 <hr>
-<li><a href="#!">Approach</a></li>
+<li><a href="approach.html">Approach</a></li>
 <hr>
 <li><a href="#!">Blog</a></li>
 <hr>
 <li><a href="#!">Client</a></li>
 <hr>
-<li><a href="#!">Membership Club</a></li>
+<li><a href="membershipClub.html">Membership Club</a></li>
 </ul>
 </div>
 <div class="col-md-3 mt-md-0 mt-3 text-center footerContent">
-<h3 class="text-uppercase">Contact Info</h5>
+<h3 class="text-uppercase">Contact Info</h3>
 <ul class="contact">
   <p>Unit No. 221, II Floor,
 JMD Megapolis Sohna Rd,

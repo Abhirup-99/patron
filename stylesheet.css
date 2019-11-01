@@ -8,16 +8,16 @@ body {
 .header {
   overflow: hidden;
   background-color: #F16723;
-  font-size:13px;
+  font-size: 16px;
 }
 .header a.logo {
   font-weight: bold;
+  font-size: 16px;
   float:left;
   color:white;
   text-align:center;
   padding: 4px 5px 4px 20px;
 }
-
 .header a:hover {
   text-decoration: none;
   color: black;
@@ -72,6 +72,19 @@ body {
 .listElements a:active{
   text-decoration: none;
   color: #999999;
+}
+.dropdown-toggle::after {
+   transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+.navbar-nav>li>.dropdown-menu {
+  margin-top: 30px;
+}
+.navbar-nav>li>.dropdown-item{
+  margin:50px !important;
 }
 .carousel-inner img {
   width: 100%;
@@ -716,6 +729,9 @@ body {
 }
 .businessContent ul{
   padding: 20px;
+  line-height: 26px;
+  color: #747474;
+  padding: 20px;
 }
 .businessContent li{
   font-size: 18px;
@@ -828,6 +844,16 @@ body {
   margin-top:5px;
   padding-left: 5px;
 }
+.login{
+  background-size:100% 100%;
+  background:url("files/what-we-do-bg.png");
+  height: 440px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin-right: 0px;
+  
+}
 footer{
   font-family: 'Open Sans', sans-serif;
   background-color: #000000;
@@ -874,3 +900,81 @@ hr{
     float: none;
   }
 }
+.serviceNav{
+  display: none;
+}
+.imageWhatsapp{
+    position: fixed;
+    margin-top: -50px;
+    top: 90%;
+    left: 95%;
+    margin-left: -120px;
+    z-index: 11000;
+  }
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+.roc{
+  height: 1000px; 
+}
+.accountant{
+  height: 1300px; 
+ }
+ #outerField{
+    padding-left: 15px;
+ }
+ .audit{
+  height: 1450px; 
+}
+.compliance{
+  height: 1250px; 
+}
+.gst{
+  height: 1050px; 
+}
+.pfBack{
+  height: 1250px; 
+}
+.pfTax{
+  height:1200px;
+}
+.incomeTax{
+  height: 1000px;
+}
+.taxPlan{
+  height: 1000px;
+}
+.tds{
+  height:1100px;
+}
+}
+@media screen and (max-width: 600px) {
+.tds{
+  height:1700px;
+}
+.taxPlan{
+  height: 1200px;
+}
+.incomeTax{
+  height: 1300px;
+}
+.pfTax{
+  height:2000px;
+}
+.compliance{
+  height: 1650px; 
+}
+.gst{
+  height: 1450px; 
+}
+.pfBack{
+  height: 1850px; 
+}
+.roc{
+  height: 1500px; 
+
+}
+}  
