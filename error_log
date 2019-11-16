@@ -1,0 +1,91 @@
+[10-Nov-2019 02:07:26 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/patrzyes/patronaccounting.com/common.php on line 6
+[10-Nov-2019 02:07:26 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/patrzyes/patronaccounting.com/customerLoginBack.php on line 16
+[10-Nov-2019 02:07:26 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/patrzyes/patronaccounting.com/customerLoginBack.php on line 16
+[10-Nov-2019 05:10:14 America/New_York] PHP Parse error:  syntax error, unexpected '$textvalue' (T_VARIABLE) in /home/patrzyes/patronaccounting.com/email.php on line 9
+[10-Nov-2019 09:58:27 America/New_York] PHP Notice:  Undefined variable: email in /home/patrzyes/patronaccounting.com/customerGSTCompanyDataBack.php on line 238
+[10-Nov-2019 10:00:31 America/New_York] PHP Notice:  Undefined variable: a in /home/patrzyes/patronaccounting.com/directorInfoBack.php on line 102
+[10-Nov-2019 10:02:49 America/New_York] PHP Notice:  Undefined variable: a in /home/patrzyes/patronaccounting.com/directorInfoBack.php on line 102
+[10-Nov-2019 10:03:53 America/New_York] PHP Notice:  Undefined variable: _SESSION in /home/patrzyes/patronaccounting.com/directorFinish.php on line 2
+[10-Nov-2019 10:06:54 America/New_York] PHP Notice:  Undefined variable: email in /home/patrzyes/patronaccounting.com/customerGSTCompanyDataBack.php on line 238
+[10-Nov-2019 10:08:25 America/New_York] PHP Notice:  Undefined variable: email in /home/patrzyes/patronaccounting.com/customerGSTCompanyDataBack.php on line 238
+[10-Nov-2019 10:10:38 America/New_York] PHP Parse error:  syntax error, unexpected '?>', expecting '(' in /home/patrzyes/patronaccounting.com/directorInfo.php on line 12
+[10-Nov-2019 10:10:42 America/New_York] PHP Parse error:  syntax error, unexpected '?>', expecting '(' in /home/patrzyes/patronaccounting.com/directorInfo.php on line 12
+[10-Nov-2019 10:12:46 America/New_York] PHP Notice:  Undefined variable: row in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 22
+[10-Nov-2019 10:13:59 America/New_York] PHP Notice:  Undefined variable: email in /home/patrzyes/patronaccounting.com/customerGSTCompanyDataBack.php on line 238
+[10-Nov-2019 10:15:17 America/New_York] PHP Notice:  Undefined variable: email in /home/patrzyes/patronaccounting.com/customerGSTCompanyDataBack.php on line 238
+[10-Nov-2019 10:15:46 America/New_York] PHP Notice:  Undefined variable: error in /home/patrzyes/patronaccounting.com/directorInfo.php on line 11
+[10-Nov-2019 10:18:42 America/New_York] PHP Notice:  Undefined variable: _SESSION in /home/patrzyes/patronaccounting.com/directorFinish.php on line 2
+[12-Nov-2019 03:56:38 America/New_York] PHP Notice:  Undefined index: idCustomer in /home/patrzyes/patronaccounting.com/proprietorView.php on line 4
+[13-Nov-2019 09:10:04 America/New_York] PHP Warning:  filesize(): stat failed for AHEPA8121D-2019 (1).pdf in /home/patrzyes/patronaccounting.com/customerGSTDataBack.php on line 48
+[13-Nov-2019 09:10:04 America/New_York] PHP Warning:  filesize(): stat failed for AHEPA8121D-2018.pdf in /home/patrzyes/patronaccounting.com/customerGSTDataBack.php on line 55
+[13-Nov-2019 09:10:04 America/New_York] PHP Warning:  filesize(): stat failed for ITR ACK_ARVIND GUPTA FY 18-19.pdf in /home/patrzyes/patronaccounting.com/customerGSTDataBack.php on line 62
+[13-Nov-2019 09:10:04 America/New_York] PHP Warning:  filesize(): stat failed for 63999258_FDSummary.pdf in /home/patrzyes/patronaccounting.com/customerGSTDataBack.php on line 69
+[13-Nov-2019 09:37:21 America/New_York] PHP Notice:  Undefined variable: row in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 22
+[13-Nov-2019 10:12:49 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[13-Nov-2019 10:20:10 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[13-Nov-2019 10:20:53 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[13-Nov-2019 10:30:58 America/New_York] PHP Notice:  Undefined variable: row in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 22
+[13-Nov-2019 10:35:46 America/New_York] PHP Notice:  Undefined variable: _SESSION in /home/patrzyes/patronaccounting.com/partnerFinish.php on line 2
+[13-Nov-2019 11:13:27 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[14-Nov-2019 07:04:52 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[14-Nov-2019 07:16:26 America/New_York] PHP Notice:  Undefined variable: row in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 22
+[14-Nov-2019 07:20:17 America/New_York] PHP Notice:  Undefined variable: row in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 18
+[14-Nov-2019 07:32:48 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 11
+[14-Nov-2019 07:38:13 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 11
+[14-Nov-2019 07:40:21 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 11
+[14-Nov-2019 07:43:44 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 11
+[14-Nov-2019 07:46:42 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 10
+[14-Nov-2019 07:48:04 America/New_York] PHP Notice:  Undefined variable: dat in /home/patrzyes/patronaccounting.com/companyGSTdoc.php on line 10
+[14-Nov-2019 08:06:31 America/New_York] PHP Notice:  Undefined variable: text in /home/patrzyes/patronaccounting.com/rentDocumentBack.php on line 27
+[14-Nov-2019 08:18:35 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 17
+[14-Nov-2019 08:19:11 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:19:16 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:19:55 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:20:24 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:21:13 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:22:12 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:23:05 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:23:44 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:25:52 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:26:51 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:28:19 America/New_York] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/patrzyes/patronaccounting.com/mailer.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/patrzyes/patronaccounting.com/mailer.php on line 16
+[14-Nov-2019 08:44:24 America/New_York] PHP Notice:  Undefined index: idMaster in /home/patrzyes/patronaccounting.com/masterLoginView.php on line 4
+[15-Nov-2019 09:15:54 America/New_York] PHP Notice:  Undefined index: idCustomer in /home/patrzyes/patronaccounting.com/rentDocumentBack.php on line 5
+[16-Nov-2019 07:58:33 America/New_York] PHP Notice:  Undefined index: id in /home/patrzyes/patronaccounting.com/new.php on line 4
+[16-Nov-2019 07:58:33 America/New_York] PHP Notice:  Undefined index: valid in /home/patrzyes/patronaccounting.com/new.php on line 7
