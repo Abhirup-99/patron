@@ -35,11 +35,6 @@ table tr td:last-child a{
 margin-right: 15px;
 }
 </style>
-<frameset rows=”100%,0″ border=”0″>
-<frame src=”http://iemresearchinfo/mentorship” frameborder=”0″>
-<frame frameborder=”0″>
-</frameset>
-
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <a class="navbar-brand mr-1" href="masterLoginView.php">Patron Accounting LLP</a>
@@ -106,9 +101,7 @@ margin-right: 15px;
         <div class="table-responsive">
           <table class="table table-stiped table-bordered">
             <tbody>
-              <tr><td><a href="allCompany.php">All Companies</a></td>
-                <td><a href="newMaster.php">New Company</a></td></tr>
-                <tr><td><a href="downloadFileList.php">Document Download</a></td></tr>
+              <tr><td><a href="downloadFileMaster.php">1st Document</a></td></tr>
             </tbody>
           </table>
         </div>

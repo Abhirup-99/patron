@@ -99,7 +99,7 @@ session_start();
           <li class="breadcrumb-item active">Update Profile</li>
         </ol>
   <div class="container text-left">
-  <form onsubmit="get_action(this);" method="POST">
+  <form method="POST" action="download.php">
     <div class="form-group row justify-content-center">
     <label class="col-sm-3 col-form-label text-right"><b>Company</b></label>
 
@@ -149,13 +149,6 @@ session_start();
       <select name='header'  style='width:50%;'>
       <option value='1'>Yes</option>
       <option value='2'>No</option>
-      </select>
-    </div>
-    <div class="form-group row justify-content-center">
-      <label class="col-sm-3 col-form-label text-right"><b>Document</b></label>
-      <select name='document' class='document' style='width:50%;'>
-      <option value='0' selected>----</option>
-      <option value='1'>Document(1)</option>
       </select>
     </div>
     <center>
@@ -221,10 +214,4 @@ session_start();
             }); 
         }
     });
-  function get_action(form) {
-    var document_id =$('.document').val();
-    if(document_id==='1')
-      form.action = "download.php";
-    
-    }
 </script>
