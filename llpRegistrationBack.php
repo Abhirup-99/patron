@@ -46,7 +46,7 @@ if($Addresserror==0)
 		$sql ="SELECT * FROM llpdata WHERE name1='$name1' AND name2='$name2'";
 		$result = mysqli_query($con,$sql);
 		$row = mysqli_fetch_array($result);
-		$_SESSION['idLlp']=$row['id'];
+		$_SESSION['idLlp']=$row['tableId'];
 		header("Location:partnerInfo.php");
 	}
 }

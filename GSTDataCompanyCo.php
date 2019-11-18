@@ -109,6 +109,7 @@ margin-right: 15px;
           <li class="breadcrumb-item active">Client Overview</li>
         </ol>
         <form action="customerGSTCompanyDataBack.php" method="post" enctype="multipart/form-data">
+        	<input type="hidden" value="<?php echo $person ?>" name="customer">
 			<div class="form-group row justify-content-left">
 				<label class="col-sm-3 col-form-label text-right"><b>Name of the company<span style="color:red;">*</span></b></label>
 				<div class="col-sm-6">

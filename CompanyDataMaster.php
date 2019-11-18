@@ -69,10 +69,27 @@ if(isset($_POST['viewid']))
     $user_id = (int)$_POST['viewid'];
     $sql = "SELECT * FROM company WHERE id = ".(int)$user_id;
     $result = mysqli_query($con, $sql);
- 	mysqli_query($con, $sql) or die(mysqli_error($con));
-	
 	$row = mysqli_fetch_array($result);
     echo json_encode($row);
 }
-
+if(isset($_POST['GST']))
+{
+	$sql = "SELECT * FROM company WHERE id= ".(int)$_POST['GST'];
+	$result = mysqli_query($con,$sql);
+	$row = mysqli_fetch_array($result);
+	echo'<table class="table" bordered="1">
+		<tr>
+		<th>Name of the Company</th>
+		<th>Name of the Director Assigned</th>
+		</tr>
+		<tr>
+		<td>'.$row['nameCompany'].'</td>
+		<td>'.$row['NameDirector'].'</td>
+		</tr>
+		</table>';
+	header("Content-Type: application/xls");    
+	header("Content-Disposition: attachment; filename=GSTCompany.xls");  
+	header("Pragma: no-cache"); 
+	header("Expires: 0");
+}
 ?>

@@ -151,7 +151,11 @@ margin-right: 15px;
         <div class="col-sm-4"><b>In case you are operating from rented premises the upload the NOC from owner of property</b></div>
         <div class="col-sm-8"><a href="" class="btn btn-success" id="Rent" target="_blank">Download</a></div>
         </div><br>
-          <button type="button" class="button btn-warning" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          <form action="CompanyDataMaster.php" method="POST">
+            <input type="hidden" name="GST" id="GST" value="">
+            <button type="submit" class="btn btn-success">Download GST</button>
+          </form>
       </center>
       </div>
       </div>
@@ -252,6 +256,8 @@ function ViewUser(viewid){
       document.getElementById('Board').href=myObj.Board;
       document.getElementById('companyDirector').innerHTML=myObj.NameDirector;
       var c=document.getElementById('Rent');
+      document.getElementById('GST').value=myObj.id;
+      console.log(myObj.id);
       if(myObj.Rent=='')
 			 c.style.display='none';
 			else

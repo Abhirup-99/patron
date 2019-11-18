@@ -42,5 +42,28 @@ if(isset($_POST['viewid']))
 	$row = mysqli_fetch_array($result);
     echo json_encode($row);
 }
-
+if(isset($_POST['GSTCustomer']))
+{
+	$sql = "SELECT * FROM gstdata WHERE tableId=".(int)$_POST['GSTCustomer'];
+	$result = mysqli_query($con,$sql);
+	$row = mysqli_fetch_array($result);
+	echo'<table class="table" bordered="1">
+	<tr>
+	<th>Email</th>
+	<th>Mobile</th>
+	<th>Business</th>
+	<th>Tradename</th>
+	</tr>
+	<tr>
+	<td>'.$row['email'].'</td>
+	<td>'.$row['mobile'].'</td>
+	<td>'.$row['business'].'</td>
+	<td>'.$row['tradename'].'</td>
+	</tr>
+	</table>';
+	header("Content-Type: application/xls");    
+	header("Content-Disposition: attachment; filename=GSTCustomer.xls");  
+	header("Pragma: no-cache"); 
+	header("Expires: 0");
+}
 ?>

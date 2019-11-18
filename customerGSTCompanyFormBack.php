@@ -10,6 +10,7 @@ $data = stripslashes($data);
 $data = htmlspecialchars($data);
 return $data;
 }
+$id=$_POST['customer'];
 $name=test_input($_POST['name']);
 $nameCompany = test_input($_POST['nameCompany']);
 $PANerror=$_FILES["PAN"]["error"];
@@ -246,7 +247,7 @@ if($PANerror==0 && $MOAerror==0 && $AOAerror==0 && $certificateerror==0 && $Bank
 	move_uploaded_file($Renttempname,$Rentfolder);
 
 	if($a!=1){
-	$sql="INSERT INTO company(nameCompany,PAN,MOA,AOA,certificate,Bank,Address,NameDirector,Board,Rent) VALUES('$nameCompany','$PANfolder','$MOAfolder','$AOAfolder','$certificatefolder','$Bankfolder','$Addressfolder','$name','$Boardfolder','$Rentfolder')";
+	$sql="INSERT INTO company(customerId,nameCompany,PAN,MOA,AOA,certificate,Bank,Address,NameDirector,Board,Rent) VALUES('$id',$nameCompany','$PANfolder','$MOAfolder','$AOAfolder','$certificatefolder','$Bankfolder','$Addressfolder','$name','$Boardfolder','$Rentfolder')";
 	mysqli_query($con,$sql);
 	$sql="SELECT id FROM company WHERE nameCompany='$nameCompany' AND PAN='$PANfolder'";
 	$result=mysqli_query($con,$sql);

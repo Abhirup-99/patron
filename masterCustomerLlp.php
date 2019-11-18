@@ -128,7 +128,11 @@ session_start();
 				<div class="col-sm-4"><b>Address Proof of proposed registrar office of LLP </b></div>
 				<div class="col-sm-8"><a href="" class="btn btn-success" id="Address" target="_blank">Download</a></div>
 				</div><br>
-					<button type="button" class="button btn-warning" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+					<form action="getLLPDataMaster.php" method="POST">
+						<input type="hidden" id="tableId" val="" name="tableId">
+						<button type="submit" class="btn btn-success">Download LLP Data</button>
+					</form>
 			</center>
 			</div>
 			</div>
@@ -219,6 +223,8 @@ function ViewUser(viewid){
 			document.getElementById("capital").innerHTML = myObj.TotalCapital;
 			var b=document.getElementById("Address");
 			b.href=myObj.Address;
+			var c = document.getElementById('tableId');
+			c.value = myObj.tableId;
 		}
 	});
 	$("#clientData").modal("show");

@@ -142,6 +142,10 @@ session_start();
 				<div class="col-sm-8"><a href="" class="btn btn-success" id="Rent" target="_blank">Download</a></div>
 				</div><br>
 					<button type="button" class="button btn-warning" data-dismiss="modal">Close</button>
+					<form action="getGSTDataMaster.php" method="POST">
+						<input type="hidden" value="" name="GSTCustomer" id="GSTCustomer">
+						<button type="submit" class="btn btn-success">Download GST</button>
+					</form>
 			</center>
 			</div>
 			</div>
@@ -225,6 +229,7 @@ function ViewUser(viewid){
 			var b=document.getElementById("Address");
 			var c=document.getElementById("Rent");
 			var d=document.getElementById("Cheque");
+			document.getElementById('GSTCustomer').value=myObj.tableId;
 			e.href=myObj.PAN;
 			a.href=myObj.Adhaar;
 			d.href=myObj.Cheque;
