@@ -102,9 +102,39 @@ margin-right: 15px;
           </li>
           <li class="breadcrumb-item active">Client Overview</li>
         </ol>
-
-        <p>Welcome to the Master Admin Section. Have a nice day.</p>
-        <a href="masterBlog.php"><h2>Add Blogs</h2></a>
+        <div class="text-center text-uppercase"><h3>Add a Blog</h3></div>
+        <form action="masterBlogBack.php" method="post" enctype="multipart/form-data">
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Title<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <input type="text" name="blogTitle" class="form-control" value="" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Text<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <textarea name="blogText" class="form-control" row="25" required style="height:300px"></textarea>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Picture<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <input type="file" name="blogPicture" class="form-control" value="" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Created By<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <input type="text" name="createdBy" class="form-control" value="" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Tag<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <input type="text" name="blogTag" class="form-control" value="" required>
+            </div>
+          </div>
+          <center><button type="submit" class="btn btn-success">Submit</button></center>
       </div>
 
       <!-- Sticky Footer -->

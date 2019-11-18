@@ -1,3 +1,8 @@
+<?php
+require("common.php");
+$sql = "SELECT * FROM blog";
+$result = mysqli_query($con,$sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -159,6 +164,17 @@ body{
         <h5>By Patron Accounting</h5>
       </center>
       <div class="blog">
+        <?php
+          echo '<div class="row">';
+           while($row = mysqli_fetch_assoc($result))
+          {
+            echo '<div class="col-lg-4 col-md-6">
+            <img src="'.$row['blogPicture'].'" alt="no image" style="height:150px;">';
+            echo '<div class="text-center"><h4>'.$row['blogTitle'].'</h4></div>';
+            echo '<div class="text-justify"><p>Created by '.$row['createdBy'].'</p></div>';
+            echo '<div class="text-justify">'.substr($row['blogText'],0,500).'<a href="\blog.php?blogid='.$row['id'].'" target="_blank"> read more..</a></div></div>';
+          }
+        ?>
       </div>
     </div>
   </div>
@@ -219,7 +235,6 @@ Haryana-122018</p>
 <script type="text/javascript">
   $(document).ready(function(){
     tags();
-    blog();
   });
   function tags(){
     var tag = "tag";
@@ -232,15 +247,5 @@ Haryana-122018</p>
       },
     })
   };
-  function blog(){
-    var blog = "blog";
-    $.ajax({
-      url:"blogsBack.php",
-      type:"POST",
-      data:{blog:blog},
-      success:function(data,status){
-        $('.blog').html(data);
-      },
-    })
-  };
+
 </script>

@@ -1,9 +1,8 @@
 <?php
 session_start();
 include("common.php");
-echo'<link rel="stylesheet" href="stylesheet.css"';
 if(isset($_POST['tag'])){
-	$sql = "SELECT * FROM tag";
+	$sql = "SELECT DISTINCT tag FROM blog";
 	$result = mysqli_query($con,$sql);
 	echo'<div class="tagAjax">';
 	while($row = mysqli_fetch_assoc($result))
@@ -12,15 +11,5 @@ if(isset($_POST['tag'])){
 	}
 	echo'</div>';
 }
-if(isset($_POST['blog']))
-{
-	$sql = "SELECT * FROM blog";
-	$result = mysqli_query($con,$sql);
-	echo '<div class="row"';
-	while($row = mysqli_query($result))
-	{
-		echo '<div class="col-lg-6 col-md-12>';
-		echo '<img src="'.$row['blogPicture'].""
-	}
-}
+
 ?>
