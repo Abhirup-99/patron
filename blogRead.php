@@ -1,7 +1,9 @@
 <?php
 require("common.php");
+$blogid = $_GET['blogid'];
 $sql = "SELECT * FROM blog";
 $result = mysqli_query($con,$sql);
+$row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -144,40 +146,16 @@ body{
 <div class="imageWhatsapp">
   <a href="https://api.whatsapp.com/send?phone=919920021502&amp;text=Hi%20Team%20Patron%20Accounting%20LLP%21%20I%20am%20interested%20to%20inquire%20about%20your%20services.%20Please%20touch%20base%20with%20me.%20Thanks.%20&amp;source=&amp;data=&quot;"><img src="files/WhatsApp Image 2019-11-01 at 7.46.04 PM.jpeg" style="width:50px;height:50px;"></a>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-2 col-md-12 tagContent">
-      <center><h4>Tags <img src="files/tags-solid.svg" style="height:20px;width:20px"></h4></center>
-      <center>
-        <div class="tag"></div>
-        <div class="share">
-          <h5>Share this on</h5>
-          <p><img src="files/facebook-f-brands (1).svg" style="height:16px;width:20px;">FaceBook</p>
-          <p><img src="files/quora-brands.svg" style="height:16px;width:20px;">Quora</p>
-          <p><img src="files/linkedin-in-brands (1).svg" style="height:12px;width:20px;">Linkedin</p>
-        </div>
-      </center>
-    </div>
-    <div class="col-lg-10 col-md-12 tagBlog">
-      <center>
-        <h2>Blog</h2>
-        <h5>By Patron Accounting</h5>
-      </center>
-      <div class="blog">
+<div class="container">
+        <div class="blogRead">
         <?php
-          echo '<div class="row">';
-           while($row = mysqli_fetch_assoc($result))
-          {
-            echo '<div class="col-lg-4 col-md-6">
-            <img src="'.$row['blogPicture'].'" alt="no image" style="height:150px;" id="blogPic">';
-            echo '<div class="text-center"><h4>'.$row['blogTitle'].'</h4></div>';
-            echo '<div class="text-justify"><p>Created by '.$row['createdBy'].'</p></div>';
-            echo '<div class="text-justify">'.substr($row['blogText'],0,500).'<a href="\patron\blogRead.php?blogid='.$row['id'].'" target="_blank"> read more..</a></div></div>';
-          }
+        echo'<h2 class="text-center">'.$row['blogTitle'].'</h2>';
+        echo '<center><img src="'.$row['blogPicture'].'" alt="no image" style="height:150px;"></center>';
+        echo '<div><p>Created by '.$row['createdBy'].'</p></div>';
+        echo '<div class="text-justify">'.$row['blogText'].'</div>';
+        echo '<div class="text-justify">'.$row['tag'].'</div>';
         ?>
       </div>
-    </div>
-  </div>
 </div>
 <footer>
 <div class="container-fluid text-md-left">
@@ -232,20 +210,3 @@ Haryana-122018</p>
 
 </body>
 </html>
-<script type="text/javascript">
-  $(document).ready(function(){
-    tags();
-  });
-  function tags(){
-    var tag = "tag";
-    $.ajax({
-      url:"blogsBack.php",
-      type:"POST",
-      data:{tag:tag},
-      success:function(data,status){
-        $('.tag').html(data);
-      },
-    })
-  };
-
-</script>

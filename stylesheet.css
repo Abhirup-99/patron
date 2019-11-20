@@ -871,6 +871,12 @@ body {
   color: #F16723;
   line-height: 20px;
 }
+#blogPic{
+  width:auto;
+}
+.blogRead{
+  left:50%;
+}
 footer{
   font-family: 'Open Sans', sans-serif;
   background-color: #000000;
