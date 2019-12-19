@@ -111,15 +111,27 @@ margin-right: 15px;
             </div>
           </div>
           <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Picture<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <input type="file" name="blogPicture" class="form-control" value="" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
             <label class="col-sm-3 col-form-label text-right"><b>Blog Text<span style="color:red;">*</span></b></label>
             <div class="col-sm-6">
               <textarea name="blogText" class="form-control" row="25" required style="height:300px"></textarea>
             </div>
           </div>
           <div class="form-group row justify-content-left">
-            <label class="col-sm-3 col-form-label text-right"><b>Blog Picture<span style="color:red;">*</span></b></label>
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Picture(2)<span style="color:red;">*</span></b></label>
             <div class="col-sm-6">
-              <input type="file" name="blogPicture" class="form-control" value="" required>
+              <input type="file" name="blogPicture2" class="form-control" value="" required>
+            </div>
+          </div>
+          <div class="form-group row justify-content-left">
+            <label class="col-sm-3 col-form-label text-right"><b>Blog Text2<span style="color:red;">*</span></b></label>
+            <div class="col-sm-6">
+              <textarea name="blogText2" class="form-control" row="25" required style="height:300px"></textarea>
             </div>
           </div>
           <div class="form-group row justify-content-left">

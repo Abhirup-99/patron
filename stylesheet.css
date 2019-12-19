@@ -1,5 +1,4 @@
 * {box-sizing: border-box;}
-
 body { 
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -571,10 +570,31 @@ body {
   padding-bottom: 0px;
 }
 #complianceContent p{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   color: #ffffff;
   padding: 20px;
+}
+
+.bankContent{
+  background-color: rgba(34,65,99,0.6);
+}
+#bankContent h3{
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#bankContent ul{
+	list-style-type: none;
+	padding: 0px;
+}
+#bankContent li{
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 0px;
 }
 .roc{
   background-size:100% 100%;
@@ -615,6 +635,19 @@ body {
   line-height: 24px;
   color:#ffffff;
 }
+
+.auditPune{
+  background-size:100% 100%;
+  background:url("files/starting3.jpeg");
+  height: 570px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin-right: 0px;
+  padding: 15px;
+}
+
+
 .audit{
   background-size:100% 100%;
   background:url("files/Service2.jpg");
@@ -624,9 +657,19 @@ body {
   background-size: cover; 
   margin-right: 0px;
 }
+.bank{
+  background-size:100% 100%;
+  background:url("files/background6.jpg");
+  height: 480px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  margin-right: 0px;
+
+}
 .accountant{
   background-size:100% 100%;
-  background:url("files/Service2.jpg");
+  background:url("files/background3.jpg");
   height: 480px; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -717,6 +760,27 @@ body {
   color: #747474;
   padding: 5px;
 }
+
+.businessContentPune h3{
+  font-size: 30px;
+  line-height: 40px;
+  color: blue;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.businessContentPune p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #747474;
+  padding: 20px;
+}
+.businessContentPune ul{
+  padding: 20px;
+  line-height: 26px;
+  color: #747474;
+  padding: 20px;
+}  
+  
 .businessContent h3{
   font-size: 30px;
   line-height: 40px;
@@ -728,6 +792,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #747474;
+  padding-right: 50px;
   padding: 20px;
 }
 .businessContent ul{
@@ -736,11 +801,7 @@ body {
   color: #747474;
   padding: 20px;
 }
-.businessContent li{
-  font-size: 18px;
-  line-height: 24px;
-  color:
-}
+
 .businessPricing{
   background-color: #F7F7F7;
   padding: 20px;
@@ -997,6 +1058,9 @@ hr{
 .compliance{
   height: 1250px; 
 }
+.auditPune{
+  height: 1250px;  
+}
 .gst{
   height: 1050px; 
 }
@@ -1015,6 +1079,9 @@ hr{
 .tds{
   height:1100px;
 }
+.businessPic{
+    display:none;
+}
 
 }
 @media screen and (max-width: 600px) {
@@ -1027,11 +1094,17 @@ hr{
 .incomeTax{
   height: 1300px;
 }
+.bank{
+  height: 1300px;
+}
 .pfTax{
   height:2000px;
 }
 .compliance{
   height: 1650px; 
+}
+.auditPune{
+  height: 1650px;  
 }
 .gst{
   height: 1450px; 

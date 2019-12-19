@@ -8,6 +8,7 @@ $result = mysqli_query($con,$sql);
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="Patron.jpg" type="image/jpg" sizes="16x16">
   <title>Patron Accounting LLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Your page description here" />
@@ -172,7 +173,7 @@ body{
             <img src="'.$row['blogPicture'].'" alt="no image" style="height:150px;" id="blogPic">';
             echo '<div class="text-center"><h4>'.$row['blogTitle'].'</h4></div>';
             echo '<div class="text-justify"><p>Created by '.$row['createdBy'].'</p></div>';
-            echo '<div class="text-justify">'.substr($row['blogText'],0,500).'<a href="\patron\blogRead.php?blogid='.$row['id'].'" target="_blank"> read more..</a></div></div>';
+            echo '<div class="text-justify">'.substr($row['blogText'],0,250).'<a href="\patron\blogRead.php?blogid='.$row['id'].'" target="_blank"> read more..</a></div></div>';
           }
         ?>
       </div>

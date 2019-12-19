@@ -1,7 +1,7 @@
 <?php
 require("common.php");
-$blogid = $_GET['blogid'];
-$sql = "SELECT * FROM blog";
+$blogid = (int)$_GET['blogid'];
+$sql = "SELECT * FROM blog WHERE id=$blogid";
 $result = mysqli_query($con,$sql);
 $row = mysqli_fetch_array($result);
 ?>
@@ -10,6 +10,7 @@ $row = mysqli_fetch_array($result);
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="Patron.jpg" type="image/jpg" sizes="16x16">
   <title>Patron Accounting LLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Your page description here" />
@@ -151,9 +152,11 @@ body{
         <?php
         echo'<h2 class="text-center">'.$row['blogTitle'].'</h2>';
         echo '<center><img src="'.$row['blogPicture'].'" alt="no image" style="height:150px;"></center>';
-        echo '<div><p>Created by '.$row['createdBy'].'</p></div>';
+        echo '<div><p><b>Created by </b>'.$row['createdBy'].'</p></div>';
         echo '<div class="text-justify">'.$row['blogText'].'</div>';
-        echo '<div class="text-justify">'.$row['tag'].'</div>';
+        echo '<center><img src="'.$row['blogPicture2'].'" alt="no image" style="height:150px;"></center>';
+        echo '<div class="text-justify">'.$row['blogText2'].'</div>';
+        echo '<div class="text-justify"><p><b>Tags </b>'.$row['tag'].'</p></div>';
         ?>
       </div>
 </div>

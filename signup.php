@@ -7,6 +7,7 @@
 <head>
   <meta charset="utf-8">
   <title>Patron Accounting LLP</title>
+  <link rel="icon" href="Patron.jpg" type="image/jpg" sizes="16x16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Your page description here" />
   <meta name="author" content="Abhirup Pal" />

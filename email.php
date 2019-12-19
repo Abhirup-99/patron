@@ -9,7 +9,7 @@ $mobile=$_POST['mobile'];
 $textvalue=$_POST['textvalue'];
 $sql = "INSERT INTO email(Email,Name,Number,Text)VALUES('$email','$name','$mobile','$textvalue')";
 mysqli_query($con,$sql);
-$textvalue="An email has been sent from the email id ".$email." The phone number is ".$mobile." ".$textvalue;
+$textvalue="An inquiry has been received from the email id ".$email." The phone number is ".$mobile." ".$textvalue;
 $robo = 'support@patronaccounting.com';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -34,15 +34,15 @@ try {
     }
 
 
-    $mailer->Host = 'server266.web-hosting.com';
+    $mailer->Host = 'smtp.gmail.com';
     $mailer->SMTPAuth = true;
-    $mailer->Username = 'support@patronaccounting.com';
-    $mailer->Password = 'abhirup@99';
-    $mailer->SMTPSecure = 'tls';
-    $mailer->Port = 587;
+    $mailer->Username = 'Patron2745@gmail.com';
+    $mailer->Password = 'raj12345@';
+    $mailer->SMTPSecure = 'ssl';
+    $mailer->Port = 465;
 
-    $mailer->setFrom('support@patronaccounting.com', 'Patron');
-    $mailer->addAddress('abhiruppalmethodist@gmail.com', 'Patron');
+    $mailer->setFrom('Patron2745@gmail.com', 'Patron');
+    $mailer->addAddress('info@patronaccounting.com', 'Patron');
 
     $mailer->isHTML(true);
     $mailer->Subject = $subject;
@@ -60,6 +60,7 @@ try {
 
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="Patron.jpg" type="image/jpg" sizes="16x16">
   <title>Patron Accounting LLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Your page description here" />
