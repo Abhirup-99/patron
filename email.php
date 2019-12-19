@@ -235,7 +235,7 @@ body{
 <hr>
 <li><a href="approach.html">Approach</a></li>
 <hr>
-<li><a href="#!">Blog</a></li>
+<li><a href="blog.php">Blog</a></li>
 <hr>
 <li><a href="client.html">Client</a></li>
 <hr>

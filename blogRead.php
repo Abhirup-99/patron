@@ -160,6 +160,10 @@ body{
         ?>
       </div>
 </div>
+        <div class="share">
+          <h5>Share this on<a href="" class="social-share facebook"><img src="files/facebook-f-brands (1).svg" style="height:16px;width:20px;" ></a><a href="" class="social-share linkedin"><img src="files/linkedin-in-brands (1).svg" style="height:16px;width:20px;" class="social-share linkedin"></a></h5>
+        </div>
+
 <footer>
 <div class="container-fluid text-md-left">
 <div class="row">
@@ -213,3 +217,27 @@ Haryana-122018</p>
 
 </body>
 </html>
+<script type="text/javascript">
+  var pageUrl = encodeURIComponent(document.URL); 
+  function socialWindow(url) {
+  var left = (screen.width - 570) / 2;
+  var top = (screen.height - 570) / 2;
+  var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+  // Setting 'params' to an empty string will launch
+  // content in a new tab or window rather than a pop-up.
+  // params = "";
+  window.open(url,"NewWindow",params);
+  }
+  
+  $(".social-share.facebook").on("click", function() {
+    console.log(1);
+    url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+    socialWindow(url);
+  });
+  
+  $(".social-share.linkedin").on("click", function() {
+    url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+    socialWindow(url);
+  })
+
+</script>
